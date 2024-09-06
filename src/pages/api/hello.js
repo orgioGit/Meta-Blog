@@ -1,5 +1,15 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import { Footer } from "@/components/footer/Footer";
+import { Header } from "@/components/Header/Header";
+import React from "react";
 
-export default function handler(req, res) {
-  res.status(200).json({ name: "John Doe" });
-}
+const Layout = ({ children }) => {
+  return (
+    <div>
+      <Header />
+      {children}
+      <Footer />
+    </div>
+  );
+};
+
+export default Layout;
