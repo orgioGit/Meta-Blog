@@ -3,7 +3,7 @@ import { MetaBlogLogo1 } from "../logos/MetaBlogLogo1";
 export const Copyright = () => {
   return (
     <div className="w-full h-auto md:flex md:justify-between justify-between items-center md:py-[32px] py-[16px] gap-[12px] border-t border-[#E8E8EA]">
-      <div className="w-auto flex justify-between items-start gap-[10px]">
+      <div className="w-auto flex justify-center items-start gap-[10px]">
         <MetaBlogLogo1 />
         <div>
           <div className="flex">
