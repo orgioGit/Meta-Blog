@@ -1,17 +1,6 @@
-import { useEffect, useState } from "react";
 import { TrendingCard } from "./TrendingCard";
 
-export const Trending = ({ articles }) => {
-  const [articleTrending, setArticleTrending] = useState([]);
-
-  const fetchData = () => {
-    fetch("http://dev.to/api/articles?per_page=4&&top=4")
-      .then((responce) => responce.json())
-      .then((data) => setArticleTrending(data));
-  };
-  useEffect(() => {
-    fetchData();
-  }, []);
+export const Trending = ({ articleTrending }) => {
   return (
     <div className="w-full h-auto flex flex-col items-start gap-[30px]">
       <div className="flex justify-start items-start">

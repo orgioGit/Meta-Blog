@@ -1,22 +1,18 @@
-import { useEffect, useState } from "react";
-import { BlogList } from "../bloglist/BlogList";
+import { BlogList } from "../blog-list/BlogList";
 
-export const BlogListPage = () => {
-  const [articles, setArticles] = useState([]);
+export const BlogListPage = ({ articleBlogList, handleClickLoadMore }) => {
 
-  const fetchData = () => {
-    fetch("http://dev.to/api/articles?per_page=12")
-      .then((responce) => responce.json())
-      .then((data) => setArticles(data));
+  const localHandleClickLoadMore = () => {
+    setPage(page + 3);
   };
-  useEffect(() => {
-    fetchData();
-  }, []);
 
   return (
     <div className="w-full h-auto flex justify-center items-center bg-[#FFF]">
       <div className="container max-w-[1216px] h-auto flex flex-col justify-center items-center bg-[#FFF]">
-        <BlogList articles={articles} />
+        <BlogList
+          articleBlogList={articleBlogList}
+          handleClickLoadMore={handleClickLoadMore}
+        />
       </div>
     </div>
   );

@@ -1,6 +1,3 @@
-import { Footer } from "@/components/footer/Footer";
-import { Header } from "@/components/Header/Header";
-
 export const ErrorPage = () => {
   return (
     <div className="w-full h-auto flex flex-col justify-center items-center bg-[#FFF]">

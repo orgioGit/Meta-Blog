@@ -1,6 +1,6 @@
 export const LeftIcon = () => {
   return (
-    <button className="w-[40px] h-[40px] flex justify-center items-center border rounded-[6px] border-[#696A75] group-hover:border-[#D4A373]">
+    <button className="w-[40px] h-[40px] flex justify-center items-center border rounded-[6px] border-[#696A75]">
       <svg
         className="hover:text-[#D4A373]"
         xmlns="http://www.w3.org/2000/svg"

@@ -6,7 +6,7 @@ export const Search = () => {
       <input
         type="Search"
         placeholder="Search"
-        className="w-full h-auto text-[14px] not-italic font-normal leading-5 bg-[#F4F4F5] text-[#A1A1AA]"
+        className="w-full h-auto text-[14px] not-italic font-normal leading-5 bg-[#F4F4F5] text-[#A1A1AA] outline-none"
       />
       <div>
         <SearchIcon />

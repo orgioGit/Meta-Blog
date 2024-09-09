@@ -1,7 +1,7 @@
 import { Address } from "../address/Address";
-import { ContactForm } from "../contactform/ContactForm";
+import { ContactForm } from "../contact-form/ContactForm";
 import { Footer } from "../footer/Footer";
-import { Header } from "../Header/Header";
+import { Header } from "../header/Header";
 
 export const ContactUsPage = () => {
   const addressinfo = [

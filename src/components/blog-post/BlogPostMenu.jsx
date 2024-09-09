@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const BlopgPostMenu = () => {
   return (
     <div className="w-full h-auto flex flex-col md:gap-[32px]">
@@ -56,12 +58,12 @@ export const BlopgPostMenu = () => {
           </button>
         </div>
         <div className="md:flex hidden justify-center items-center">
-          <a
-            href=""
+          <Link
+            href="/blog-list"
             className="text-[12px] not-italic font-bold leading-6 text-[#495057]  hover:text-[#D4A373]"
           >
             View All
-          </a>
+          </Link>
         </div>
       </div>
     </div>

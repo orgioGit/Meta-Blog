@@ -1,11 +1,12 @@
 export const TrendingCard = ({ badge, text, url }) => {
   return (
     <div
-      className="w-auto h-[320px] flex flex-col justify-end rounded-[12px] p-[30px] gap-[16px] bg-[rgba(20,22,36,0.40)] hover:shadow-sm shadow:shadow-sm bg-opacity-50"
+      className="w-auto h-[320px] flex flex-col justify-end rounded-[12px] p-[30px] gap-[16px] hover:shadow-sm shadow:shadow-sm"
       style={{
         background: `linear-gradient(0deg, rgba(20, 22, 36, 0.40) 50%, rgba(20, 22, 36, 0.40) 100%), url(${url})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
+        backgroundRepeat: 'no-repeat',
         backgroundColor: "LightGray",
       }}
     >

@@ -1,7 +1,7 @@
 import { LoadMore } from "../load-more/LoadMore";
 import { BlogListCard } from "./BlogListCard";
 
-export const BlogList = ({ articles }) => {
+export const BlogList = ({ articleBlogList }) => {
   return (
     <div className="w-full flex flex-col justify-center items-center gap-[30px] py-[100px]">
       <div className="w-full h-auto flex flex-col justify-start items-start md:gap-[32px]">
@@ -10,7 +10,7 @@ export const BlogList = ({ articles }) => {
         </h1>
       </div>
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-[20px]">
-        {articles.map((card) => {
+        {articleBlogList.map((card) => {
           return (
             <BlogListCard
               url={card.cover_image}

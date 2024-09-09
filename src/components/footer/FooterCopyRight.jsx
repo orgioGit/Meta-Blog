@@ -1,4 +1,4 @@
-import { MetaBlogLogo1 } from "../logos/MetaBlogLogo1";
+import { MetaBlogLogo1 } from "../icons/MetaBlogLogo1";
 
 export const Copyright = () => {
   return (
