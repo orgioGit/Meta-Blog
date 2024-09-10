@@ -14,19 +14,19 @@ export const HomePage = () => {
   };
 
   const fetchCarouselData = () => {
-    fetch(`http://dev.to/api/articles?per_page=1`)
+    fetch(`http://dev.to/api/articles/latest?per_page=1`)
       .then((responce) => responce.json())
       .then((data) => setArticleCarousel(data));
   };
 
   const fetchTrendingData = () => {
-    fetch(`http://dev.to/api/articles?per_page=4&top=4`)
+    fetch(`http://dev.to/api/articles/latest?per_page=4&top=4`)
       .then((responce) => responce.json())
       .then((data) => setArticleTrending(data));
   };
 
   const fetchBlogPostData = () => {
-    fetch(`http://dev.to/api/articles?per_page=${page}`)
+    fetch(`http://dev.to/api/articles/latest?per_page=${page}`)
       .then((responce) => responce.json())
       .then((data) => setArticleBlogPost(data));
   };

@@ -19,14 +19,14 @@ export const Carousel = ({ articleCarousel }) => {
                 }}
               >
                 <div className="max-w-[1216px] h-auto flex flex-col relative items-end gap-[12px]">
-                  <div className="max-w-[600px] h-auto flex flex-col items-start bg-[#FFF] rounded-[8px] p-[40px] shadow-gray-400">
+                  <div className="max-w-[600px] h-[252px] flex flex-col items-start bg-[#FFF] rounded-[8px] p-[40px] shadow-gray-400">
                     <div className="flex flex-col items-start gap-[16px]">
                       <div className="w-auto h-auto flex justify-center items-center bg-[#4B6BFB] py-[4px] px-[10px] rounded-[6px]">
                         <p className="text-[14px] not-italic font-medium leading-5 text-[#FFF]">
                           {carousel?.title}
                         </p>
                       </div>
-                      <h1 className="text-[36px] not-italic font-semibold leading-10 text-[#181A2A]">
+                      <h1 className="text-[36px] not-italic font-semibold leading-10 text-[#181A2A] line-clamp-2">
                         {carousel?.description}
                       </h1>
                       <p className="text-[16px] not-italic font-normal leading-6 text-[#97989F]">
