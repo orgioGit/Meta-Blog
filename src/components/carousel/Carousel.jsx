@@ -23,7 +23,7 @@ export const Carousel = ({ articleCarousel }) => {
                     <div className="flex flex-col items-start gap-[16px]">
                       <div className="w-auto h-auto flex justify-center items-center bg-[#4B6BFB] py-[4px] px-[10px] rounded-[6px]">
                         <p className="text-[14px] not-italic font-medium leading-5 text-[#FFF]">
-                          {carousel?.title}
+                          {carousel?.tag_list[0]}
                         </p>
                       </div>
                       <h1 className="text-[36px] not-italic font-semibold leading-10 text-[#181A2A] line-clamp-2">

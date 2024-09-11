@@ -1,9 +1,9 @@
 import { LoadMore } from "../load-more/LoadMore";
 import { BlogListCard } from "./BlogListCard";
 
-export const BlogList = ({ articleBlogList }) => {
+export const BlogList = ({ articleBlogList, handleClickLoadMore }) => {
   return (
-    <div className="w-full flex flex-col justify-center items-center gap-[30px] py-[100px]">
+    <div className="w-full flex flex-col justify-center items-center gap-[30px]  pt-[200px] pb-[100px]">
       <div className="w-full h-auto flex flex-col justify-start items-start md:gap-[32px]">
         <h1 className="text-[24px] not-italic font-bold leading-7 text-[#181A2A]">
           All Blog Post
@@ -24,7 +24,7 @@ export const BlogList = ({ articleBlogList }) => {
         })}
       </div>
       <div className="h-auto flex justify-center items-center group">
-        <LoadMore />
+        <LoadMore handleClickLoadMore={handleClickLoadMore} />
       </div>
     </div>
   );

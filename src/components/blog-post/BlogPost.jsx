@@ -1,6 +1,7 @@
 import { BlogPostCard } from "./BlogPostCard";
 import { BlopgPostMenu } from "./BlogPostMenu";
 import { LoadMore } from "../load-more/LoadMore";
+import { DateFormater } from "../Utils/DateFormater";
 
 export const BlogPost = ({ articleBlogPost, handleClickLoadMore }) => {
   return (
@@ -8,11 +9,12 @@ export const BlogPost = ({ articleBlogPost, handleClickLoadMore }) => {
       <BlopgPostMenu />
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-[20px]">
         {articleBlogPost.map((card) => {
+          const formatedDate = <DateFormater card={card} />;
           return (
             <BlogPostCard
               badge={card.tag_list[0]}
               text={card.description}
-              date={card.published_at}
+              date={formatedDate}
               url={card.cover_image}
             />
           );

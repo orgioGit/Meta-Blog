@@ -44,7 +44,7 @@ export const HomePage = () => {
   }, [page]);
 
   return (
-    <div className="w-full h-auto flex justify-center items-center py-[100px] bg-[#FFF]">
+    <div className="w-full h-auto flex justify-center items-center pt-[200px] pb-[100px] bg-[#FFF]">
       <div className="container max-w-[1216px] h-auto flex flex-col items-center m-auto bg-[#FFF] md:gap-[100px] gap-[50px] text-black">
         <Carousel articleCarousel={articleCarousel} />
         <Trending articleTrending={articleTrending} />
