@@ -12,7 +12,7 @@
     "next": "14.2.7",
     "react": "^18",
     "react-dom": "^18",
-    "vercel": "^37.4.0"
+    "vercel": "^37.4.2"
   },
   "devDependencies": {
     "postcss": "^8",

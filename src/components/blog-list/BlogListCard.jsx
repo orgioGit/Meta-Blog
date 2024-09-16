@@ -26,8 +26,8 @@ export const BlogListCard = ({
         <h1 className="text-[24px] not-italic font-bold leading-6 text-[#181A2A] line-clamp-3">
           {text}
         </h1>
-        <div className="flex justify-start items-center">
-          <div className="flex gap-[8px]">
+        <div className="w-auto flex justify-start items-center">
+          <div className="flex justify-between items-center gap-[8px]">
             <div
               style={{
                 width: "28px",

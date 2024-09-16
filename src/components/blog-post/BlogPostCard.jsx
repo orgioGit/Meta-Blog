@@ -16,12 +16,14 @@ export const BlogPostCard = ({ badge, text, date, url }) => {
         <span className="w-auto h-[28px] text-[12px] not-italic font-medium leading-5 text-[#4B6BFB] rounded-[6px] py-[4px] px-[10px] bg-[#4B6BFB0D]">
           {badge || "tag not found"}
         </span>
-        <p className="text-[24px] not-italic font-bold leading-6 text-[#181A2A] line-clamp-3">
-          {text}
-        </p>
-        <p className="text-[16px] not-italic font-normal leading-5 text-[#97989F]">
-          {date}
-        </p>
+        <div className="flex flex-col justify-between items-start gap-[20px]">
+          <p className="text-[24px] not-italic font-bold leading-6 text-[#181A2A] line-clamp-3">
+            {text}
+          </p>
+          <p className="text-[16px] not-italic font-normal leading-5 text-[#97989F]">
+            {date}
+          </p>
+        </div>
       </div>
     </div>
   );

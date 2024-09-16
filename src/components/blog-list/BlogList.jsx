@@ -1,4 +1,5 @@
 import { LoadMore } from "../load-more/LoadMore";
+import { DateFormater } from "../Utils/DateFormater";
 import { BlogListCard } from "./BlogListCard";
 
 export const BlogList = ({ articleBlogList, handleClickLoadMore }) => {
@@ -11,6 +12,7 @@ export const BlogList = ({ articleBlogList, handleClickLoadMore }) => {
       </div>
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-[20px]">
         {articleBlogList.map((card) => {
+          const formatedDate = <DateFormater card={card} />;
           return (
             <BlogListCard
               url={card.cover_image}
@@ -18,7 +20,7 @@ export const BlogList = ({ articleBlogList, handleClickLoadMore }) => {
               text={card.description}
               profileImgUrl={card.user.profile_image}
               name={card.user.name}
-              date={card.published_at}
+              date={formatedDate}
             />
           );
         })}

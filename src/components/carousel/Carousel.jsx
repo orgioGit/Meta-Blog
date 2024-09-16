@@ -1,5 +1,6 @@
 import { LeftIcon } from "../icons/LeftIcon";
 import { RightIcon } from "../icons/RightIcon";
+import { DateFormater } from "../Utils/DateFormater";
 
 export const Carousel = ({ articleCarousel }) => {
   return (
